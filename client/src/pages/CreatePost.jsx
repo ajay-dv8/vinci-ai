@@ -132,7 +132,7 @@ const CreatePost = () => {
             )}
 
             {generatingImg && (
-              <div className="absolute inset-0 z-0 flex justify-center items-center bg-[rgba(0,0,0,0.5)] rounded-lg">
+              <div className="absolute w-[45%] h-[70%] flex justify-center items-center bg-[rgba(0,0,0,0.5)] rounded-lg">
                 <Loader />
               </div>
             )}
