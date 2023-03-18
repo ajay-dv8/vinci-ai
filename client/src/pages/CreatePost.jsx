@@ -132,7 +132,7 @@ const CreatePost = () => {
             )}
 
             {generatingImg && (
-              <div className="absolute w-[45%] h-[70%] flex justify-center items-center bg-[rgba(0,0,0,0.5)] rounded-lg">
+              <div className="absolute flex justify-center items-center rounded-lg">
                 <Loader />
               </div>
             )}
@@ -142,7 +142,7 @@ const CreatePost = () => {
         </div>
 
         <div className="mt-10 flex items-center justify-center flex-col">
-          <p className="mt-2 text-[#666e75] text-[14px]">You can share the image you generate with the community</p>
+          <p className="mt-2 text-[#666e75] text-[14px]">You can share the image you generate with the community and also download any image from the gallery</p>
           <button
             type="submit"
             className="mt-3 text-white bg-gradient-to-r from-blue-400 via-purple-400 to-blue-500 font-medium rounded-md text-sm w-full sm:w-auto px-5 py-2.5 text-center background-animate"
