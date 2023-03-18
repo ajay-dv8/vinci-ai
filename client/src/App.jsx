@@ -10,7 +10,7 @@ function App() {
       <BrowserRouter>
         <header className='sticky top-0 h-15 background-animate bg-gradient-to-r from-blue-400 via-purple-400 to-blue-500 w-full flex justify-between items-center bg-[#C25188] sm:px-8 py-4 border-b border-b-[#e6ebf4] opacity-100 z_idx_h'>
           <Link to='/'>
-            <img src={logo} alt="logo" className="w-9 mx-4 object-contain" />
+            <img src={logo} alt="logo" className="w-10 mx-4 object-contain" />
           </Link>
 
           <Link to='/create-post'
