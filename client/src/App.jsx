@@ -8,13 +8,13 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <header className='h-20 background-animate bg-gradient-to-r from-blue-400 via-purple-400 to-blue-500 w-full flex justify-between items-center bg-[#C25188] sm:px-8 py-4 border-b border-b-[#e6ebf4]'>
+        <header className='sticky h-15 background-animate bg-gradient-to-r from-blue-400 via-purple-400 to-blue-500 w-full flex justify-between items-center bg-[#C25188] sm:px-8 py-4 border-b border-b-[#e6ebf4]'>
           <Link to='/'>
-            <img src={logo} alt="logo" className="w-10 mx-4 object-contain" />
+            <img src={logo} alt="logo" className="w-15 mx-4 object-contain" />
           </Link>
 
           <Link to='/create-post'
-            className='shadow-md font-inter font-medium bg-blue-600 text-white px-4 py-2 mx-3 rounded-md hover:bg-blue-800'>
+            className='shadow-md font-inter font-medium bg-blue-600 text-white px-2 py-1 mx-3 rounded-md hover:bg-blue-800'>
             Generate
           </Link>
         </header>
