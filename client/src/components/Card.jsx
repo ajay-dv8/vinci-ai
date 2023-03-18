@@ -1,12 +1,12 @@
 import React from 'react';
-
+import '../pages/bg.css'
 import { download } from '../assets';
 import { downloadImage } from '../utils';
 
 const Card = ({ _id, name, prompt, photo }) => (
   <div className="rounded-xl group relative shadow-card hover:shadow-cardhover card">
-    <img
-      className="w-full h-auto object-cover rounded-xl"
+    <img loading='lazy'
+      className="w-full h-auto object-cover rounded-xl "
       src={photo}
       alt={prompt}
     />
