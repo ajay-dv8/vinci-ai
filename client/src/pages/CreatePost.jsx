@@ -37,7 +37,7 @@ const CreatePost = () => {
         })
 
         const data = await response.json();
-        setForm({ ...form, photo: `data:image/jpeg;base64,${data.photo}` })
+        setForm({ ...form, photo: `data:image/png;base64,${data.photo}` })
       } catch (err) {
         alert(err);
       } finally {
@@ -89,7 +89,7 @@ const CreatePost = () => {
             //labelName="Your Name"
             type="text"
             name="name"
-            placeholder="Name: Ex., Nitha"
+            placeholder="Name: E.g. Nitha"
             value={form.name}
             handleChange={handleChange}
           />
