@@ -23,7 +23,7 @@ const FormField = ({
         <button
           type="button"
           onClick={handleSurpriseMe}
-          className="bg-gradient-to-r from-blue-400 via-purple-400 to-blue-500 background-animate font-semibold text-xs  py-1 px-2 rounded-[5px] text-white "
+          className="bg-gradient-to-r from-blue-400 via-purple-400 to-blue-500 background-animate font-semibold text-xs  py-1 px-2 rounded-[5px] text-white hover:opacity-50 shadow"
         > Surprise me </button>
       )}
     </div>
@@ -32,7 +32,7 @@ const FormField = ({
       type={type}
       id={name}
       name={name}
-      className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#6469ff] focus:border-[#6469ff] outline-none block w-full p-3"
+      className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg shadow focus:ring-[#6469ff] focus:border-[#6469ff] block outline-none w-full p-3 bg-opacity-50"
       placeholder={placeholder}
       value={value}
       onChange={handleChange}

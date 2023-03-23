@@ -8,14 +8,14 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <header className='sticky top-0 h-15 background-animate bg-gradient-to-r from-blue-400 via-purple-400 to-blue-500 w-full flex justify-between items-center bg-[#C25188] sm:px-8 py-4 border-b border-b-[#e6ebf4] opacity-100 z_idx_h'>
+        <header className='sticky top-0 h-15 background-animate bg-gradient-to-r from-blue-400 via-purple-400 to-blue-500 w-full flex justify-between items-center bg-[#C25188] sm:px-8 py-4 border-b border-b-[#e6ebf4] opacity-100 z-10'>
           <Link to='/'>
             <img src={logo} alt="logo" className="w-10 mx-4 object-contain" />
           </Link>
 
           <Link to='/create-post'
             className='shadow-md font-inter font-medium bg-blue-600 text-white px-2 py-1 mx-3 rounded-md hover:bg-blue-800'>
-            Generate
+            Generate img
           </Link>
         </header>
 

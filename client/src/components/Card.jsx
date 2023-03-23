@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../pages/bg.css'
 import { download } from '../assets';
 import { downloadImage } from '../utils';
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
-const Card = ({ _id, name, prompt, photo }) => (
-  <div className="rounded-xl group relative shadow-card hover:shadow-cardhover card">
+const Card = ({ _id, name, prompt, photo }) => {
+
+  useEffect(() => {
+    AOS.init({duration: 1500});
+  },[]);
+
+  return(
+  <div  data-aos="zoom-in" data-aos-delay='100' className="rounded-xl group relative shadow-card hover:shadow-cardhover card">
     <img loading='lazy'
       className="w-full h-auto object-cover rounded-xl "
       src={photo}
@@ -24,6 +32,6 @@ const Card = ({ _id, name, prompt, photo }) => (
       </div>
     </div>
   </div>
-);
+)};
 
 export default Card;
