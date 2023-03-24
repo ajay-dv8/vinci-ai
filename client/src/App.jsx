@@ -9,8 +9,9 @@ function App() {
     <>
       <BrowserRouter>
         <header className='sticky top-0 h-15 background-animate bg-gradient-to-r from-blue-400 via-purple-400 to-blue-500 w-full flex justify-between items-center bg-[#C25188] sm:px-8 py-4 border-b border-b-[#e6ebf4] opacity-100 z-10'>
-          <Link to='/'>
+          <Link to='/' className='flex flex-row justify-center items-center font-bold text-white'>
             <img src={logo} alt="logo" className="w-10 mx-4 object-contain" />
+            <h2>Vinci-AI</h2>
           </Link>
 
           <Link to='/create-post'
