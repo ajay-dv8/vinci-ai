@@ -59,7 +59,8 @@ const Footer = () => {
           </span>
 
           <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
-                Send your reviews to: <a href="mailto:ajaydives3@gmail.com" className='hover:underline'> ajaydives3@gmail.com</a>
+                Send your reviews to: <a href="mailto:ajaydives3@gmail.com" className='hover:underline'> ajaydives3@gmail.com &nbsp;| &nbsp;</a>
+                <a>co-developer: Nitha</a>
           </span>
 
           <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">

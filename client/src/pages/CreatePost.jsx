@@ -124,14 +124,14 @@ const CreatePost = () => {
         </div>
 
         <div className="flex justify-center w-full">
-          <div className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 max-w-[50%] p-3 flex justify-center items-center sm:w-full">
+          <div className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 max-w-[50%] p-3 flex justify-center items-center xs:w-full">
             { form.photo ? (
               <>
-              {/* FIX DOWNLOAD BUTTON* 
+               {/** FIX DOWNLOAD BUTTON
               <button type="button" onClick={() => downloadImage(photo)} className="outline-none bg-black border-none flex flex-row text-black text-[0.625rem] rounded-[1rem] absolute">
                 <img src={download} alt="download" className="w-6 h-6 object-contain invert" />
               </button>
-              */}
+              */} 
               <img 
                 src={form.photo}
                 alt={form.prompt}
